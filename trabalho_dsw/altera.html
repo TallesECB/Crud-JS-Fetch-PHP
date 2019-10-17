@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Alterar</title>
+		<link rel="stylesheet" type="text/css" href="./css/estilo.css">
+	</head>
+	<body>
+		<h1>Alterar um Reagente</h1>
+		<form method="get" onsubmit="alterarReagente()" name="searchReagente">
+			Digite o nome do Reagente que quer alterar: <input type="text" name="reagNome">
+			<input type="submit" name="pesquisar" value="buscar">
+		</form>
+		<form method="post" onsubmit="atualizarReagente()" name="atualizar" id="atualizaReagente">
+		<h1>Insira um novo Reagente</h1>	
+			Nome do Reagente: <input type="text" name="nomereag"><br><br>
+			Fornecedor: <input type="text" name="fornecedor"><br><br>
+			Quantidade: <input type="number" name="quant"><br><br>
+			<input type="submit" name="updateReagente" value="atualizar">
+		</form>
+		<p id="resultado"></p>
+		<a href="index.html">Voltar</a>
+		<script src="./js/funcoes.js"></script>
+	</body>
+</html>
